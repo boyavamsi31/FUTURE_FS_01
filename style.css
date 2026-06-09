@@ -177,52 +177,58 @@ footer{
 }
 /* Mobile Responsive */
 
-@media (max-width: 768px){
+@media (max-width:768px){
 
     nav{
-        flex-direction: column;
-        padding: 15px;
+        flex-direction:column;
+        padding:12px;
     }
 
     nav ul{
-        flex-direction: column;
-        text-align: center;
-        margin-top: 10px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+        margin-top:10px;
     }
 
     nav ul li{
-        margin: 10px 0;
+        margin:0;
+    }
+
+    .hero{
+        height:auto;
+        min-height:80vh;
+        padding:40px 15px;
     }
 
     .hero-content h1{
-        font-size: 32px;
+        font-size:32px;
+        line-height:1.2;
     }
 
     .hero-content h2{
-        font-size: 20px;
+        font-size:20px;
     }
 
     .hero-content p{
-        font-size: 16px;
-        padding: 0 15px;
+        font-size:15px;
+        padding:0 10px;
     }
 
-    .card-container{
-        flex-direction: column;
-        align-items: center;
+    .social-buttons{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
+    .card,
     .project-card{
-        width: 90%;
-    }
-
-    .card{
-        width: 90%;
-        text-align: center;
+        width:90%;
     }
 
     .contact-form{
-        width: 90%;
+        width:100%;
     }
 }
 html{
@@ -278,4 +284,90 @@ section{
 
 .social-btn:hover{
     transform:scale(1.05);
+}
+#success-msg{
+    margin-top:15px;
+    font-size:16px;
+    font-weight:bold;
+    text-align:center;
+}
+#theme-toggle{
+    background:white;
+    color:#111827;
+    border:none;
+    padding:8px 15px;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.dark-mode{
+    background:#0f172a;
+    color:white;
+}
+
+.dark-mode nav{
+    background:#020617;
+}
+
+.dark-mode .card,
+.dark-mode .project-card{
+    background:#1e293b;
+    color:white;
+}
+
+.dark-mode #about,
+.dark-mode #projects{
+    background:#111827;
+}
+
+.dark-mode .contact-form input,
+.dark-mode .contact-form textarea{
+    background:#1e293b;
+    color:white;
+    border:1px solid #475569;
+}
+
+.dark-mode footer{
+    background:#020617;
+}
+#theme-toggle{
+    background:white;
+    color:#111827;
+    border:none;
+    padding:8px 15px;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.dark-mode{
+    background:#0f172a;
+    color:white;
+}
+
+.dark-mode nav{
+    background:#020617;
+}
+
+.dark-mode .card,
+.dark-mode .project-card{
+    background:#1e293b;
+    color:white;
+}
+
+.dark-mode #about,
+.dark-mode #projects{
+    background:#111827;
+}
+
+.dark-mode .contact-form input,
+.dark-mode .contact-form textarea{
+    background:#1e293b;
+    color:white;
+    border:1px solid #475569;
+}
+
+.dark-mode footer{
+    background:#020617;
 }
